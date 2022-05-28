@@ -31,7 +31,7 @@ public class DataTableWithoutHeader {
         //
         // For other transformations you can register a DataTableType.
 
-        List<String> credentials = table.asList(String.class);
+        List<String> credentials = table.transpose().asList(String.class);
         // this is used to retreive the data from feature file
 
         String name = credentials.get(0);
