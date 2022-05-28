@@ -1,4 +1,3 @@
-
 Feature: Opening Google
 Scenario: User Opening Google Website Scenario
   Given Lanching the browser
