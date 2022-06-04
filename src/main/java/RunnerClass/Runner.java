@@ -7,11 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/FeatureFile/",
-        glue = "StepDefinitions",
+        glue = {"StepDefinitions","Hooks/TaggedHooks"},
         stepNotifications = true,
         dryRun = false,
-        monochrome = true,
-        tags = "@Simplelogin,@Datatable",
+        monochrome = false,
+        tags = "@TaggedHooks",
         plugin = { "pretty", "html:/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/Report/cucumber-reports.html" }
         )
 public class Runner {
@@ -30,6 +30,10 @@ public class Runner {
    // one feature file can multiple scenarios
    // Cucumber Hooks
    // it does not have Junit, HOOKs have own library for @Before and @After
+   // we have include the Hook package in glue option to execute the before and after
+   // if have multiple before and after
+  // Before(order=0,1,2) is used to specific the order of execution in Increament order
+  // After(order=2,1,0) is used to specific the order of execution in Decrement order
    //
 
  
