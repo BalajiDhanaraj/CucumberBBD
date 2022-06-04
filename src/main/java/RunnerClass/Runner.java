@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/FeatureFile/Login.feature",
         glue = "StepDefinitions",
         stepNotifications = true,
-        dryRun = true,
+        dryRun = false,
         monochrome = true,
-        plugin =  { }
+        plugin = { "pretty", "html:/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/Report/cucumber-reports.html" }
         )
 public class Runner {
 
@@ -21,4 +21,4 @@ public class Runner {
    // dryrun and strict are support boolean
    // monochrome to print human readable details in console
    // format is deprecated instance of format we will use the Plugin to generate the report
-   // Plugin 
+   // Plugin   3 type of file format is ---> html, json, xml
