@@ -6,11 +6,12 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/FeatureFile/Login.feature",
+@CucumberOptions(features = "/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/FeatureFile/",
         glue = "StepDefinitions",
         stepNotifications = true,
-        dryRun = false,
+        dryRun = true,
         monochrome = true,
+        tags = "~@Simplelogin",
         plugin = { "pretty", "html:/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/Report/cucumber-reports.html" }
         )
 public class Runner {
@@ -22,3 +23,5 @@ public class Runner {
    // monochrome to print human readable details in console
    // format is deprecated instance of format we will use the Plugin to generate the report
    // Plugin   3 type of file format is ---> html, json, xml
+   //  Tag ---> to execute the selected feature or scenario , if we dont want to execute  use " ~ "
+ 
