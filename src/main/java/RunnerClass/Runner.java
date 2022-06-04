@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
         glue = "StepDefinitions",
         stepNotifications = true,
         dryRun = true,
-        monochrome = true
+        monochrome = true,
+        plugin =  { }
         )
 public class Runner {
 
@@ -18,4 +19,6 @@ public class Runner {
    // dry run will not execute, but it will check the feature file and stepdefinition are correctly mapped with eachother, it will validate and verification, self evalution
    // strict is deprecated in cucumber 6, strict will execute and check if both the feature and step definition
    // dryrun and strict are support boolean
-   // monochrome to print human readable in console
+   // monochrome to print human readable details in console
+   // format is deprecated instance of format we will use the Plugin to generate the report
+   // Plugin 
