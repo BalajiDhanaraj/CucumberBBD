@@ -33,10 +33,10 @@ public class Login {
       String title = driver.getTitle();
       System.out.println("title"+title);
     }
-    @Then("close the browser")
-    public void close_the_browser() {
-
-        driver.close();
-    }
+//    @Then("close the browser")
+//    public void close_the_browser() {
+//
+//        driver.close();
+//    }
 
 }
