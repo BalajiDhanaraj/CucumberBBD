@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         stepNotifications = true,
         dryRun = true,
         monochrome = true,
-        tags = "~@Simplelogin",
+        tags = "@Simplelogin",
         plugin = { "pretty", "html:/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/Report/cucumber-reports.html" }
         )
 public class Runner {
