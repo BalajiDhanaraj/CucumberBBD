@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/FeatureFile/",
         glue = "StepDefinitions",
         stepNotifications = true,
-        dryRun = true,
+        dryRun = false,
         monochrome = true,
-        tags = "@Simplelogin",
+        tags = "@Simplelogin,@Datatable",
         plugin = { "pretty", "html:/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/Report/cucumber-reports.html" }
         )
 public class Runner {
@@ -24,6 +24,12 @@ public class Runner {
    // format is deprecated instance of format we will use the Plugin to generate the report
    // Plugin   3 type of file format is ---> html, json, xml
    //  Tag ---> to execute the selected feature or scenario , if we dont want to execute  use " ~ "
+   //  Runner class ---. we can use OR, AND condition
+   // to execute the OR condtion will execute  if one of the tag is available in any of feature file
+   // to execute the AND condtion  only if both tag name should be there in feature file
    // one feature file can multiple scenarios
+   // Cucumber Hooks
+   // it does not have Junit, HOOKs have own library for @Before and @After
+   //
 
  
