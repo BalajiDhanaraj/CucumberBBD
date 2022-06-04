@@ -24,4 +24,6 @@ public class Runner {
    // format is deprecated instance of format we will use the Plugin to generate the report
    // Plugin   3 type of file format is ---> html, json, xml
    //  Tag ---> to execute the selected feature or scenario , if we dont want to execute  use " ~ "
+   // one feature file can multiple scenarios
+
  
