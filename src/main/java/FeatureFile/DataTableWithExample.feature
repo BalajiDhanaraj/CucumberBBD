@@ -8,6 +8,7 @@ Feature: This is the Loign page of orangehrm
 Examples:
     |Username|Password|
     |Admin   |admin123|
+    |admin   |Admin123|
 
 
 
