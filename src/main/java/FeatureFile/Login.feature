@@ -1,4 +1,4 @@
-@Simplelogin
+@Simplelogin @Datatable
 Feature: This is login feature to test Orange HRM
   @Positive
   Scenario: To Check Login Positive Scenario
