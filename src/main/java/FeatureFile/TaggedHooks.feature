@@ -1,6 +1,5 @@
 @TaggedHooks
   Feature: Test tagged hooks
-
     @First
     Scenario: This is first scenario
       Given this is the first step

@@ -13,20 +13,20 @@ public class TaggedHooks {
     public void afterscenario(){
         System.out.println("after scenerio");
     }
-    @Before("@First")
+    @Before("@First,@Second")
     public void beforefirst(){
         System.out.println("before first");
     }
-    @After("@First")
+    @After("@First,@Second")
     public void afterfirst(){
         System.out.println("after first");
     }
-    @Before("@Second")
-    public void beforesecond(){
-        System.out.println("before second");
-    }
-    @After("@Second")
-    public void aftersecond(){
-        System.out.println("after second");
-    }
+//    @Before("@Second")
+//    public void beforesecond(){
+//        System.out.println("before second");
+//    }
+//    @After("@Second")
+//    public void aftersecond(){
+//        System.out.println("after second");
+//    }
 }
