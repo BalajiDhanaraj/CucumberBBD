@@ -6,12 +6,12 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/FeatureFile/TaggedHooks.feature",
+@CucumberOptions(features = "/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/FeatureFile/",
         glue = {"StepDefinitions","Hooks"},
         stepNotifications = false,
         dryRun = false,
         monochrome = false,
-        tags = "@TaggedHooks",
+        tags = "@BackgroundExmaple",
         plugin = { "pretty", "html:/Volumes/Macintosh HD/For Mac/java text and soft file and java IDE/Intellij java project/CucumberBBD/src/main/java/Report/cucumber-reports.html" }
         )
 public class Runner {
