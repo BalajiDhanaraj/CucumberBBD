@@ -13,11 +13,11 @@ public class TaggedHooks {
     public void afterscenario(){
         System.out.println("after scenerio");
     }
-    @Before("@First,@Second")
+    @Before("@First")
     public void beforefirst(){
         System.out.println("before first");
     }
-    @After("@First,@Second")
+    @After("@First")
     public void afterfirst(){
         System.out.println("after first");
     }
